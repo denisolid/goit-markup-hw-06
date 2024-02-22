@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -179,8 +180,79 @@
             </li>
           </ul>
         </address>
-      </div>
+        <button type="button" class="open-menu-btn">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-open-menu"></use>
+          </svg>
+        </button>
+
+    <!-------------------------------Mobile-Menu----------------------------------------->
+        <div class="mob-menu">
+            <div>
+                <button class="mob-menu-button" type="button">
+                    <svg class="mob-menu-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close.svg"></use>
+                    </svg>
+                </button>
+                <nav class="mob-menu-navigation">
+                    <ul class="mob-nav-list">
+                        <li><a class="mob-nav-link current" href="./index.html">Studio</a>
+                        </li>
+                        <li><a class="mob-nav-link" href="">Portfolio</a>
+                        </li>
+                        <li><a class="mob-nav-link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <address class="mob-contacts">
+                    <ul class="mob-contacts-list">
+                        <li class="mob-contacts-item">
+                                <a class="mob-contacts-link "
+                                href="tel:+110001111111">+11
+                                (000)
+                                111-11-11</a></li>
+                        <li class="mob-contacts-item"><a  class=" mob-mailto mob-contacts-link"
+                          href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="mob-icon">
+                    <li class="mob-list-icon">
+                        <a class="mob-icon-link" href="https://www.instagram.com/" target="_blank">
+                            <svg class="team-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-inst-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-list-icon">
+                        <a class="mob-icon-link" href="https://twitter.com/" target="_blank">
+                            <svg class="team-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitt-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-list-icon">
+                        <a class="mob-icon-link" href="https://www.facebook.com/" target="_blank">
+                            <svg class="team-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-fb-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-list-icon">
+                        <a class="mob-icon-link" href="https://www.linkedin.com/" target="_blank">
+                            <svg class="team-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
+
+
 
     <main>
       <!--====================================== SECTION 1 ===================================-->
@@ -868,8 +940,9 @@
                   <use href="./images/icons.svg#icon-checkmark"></use>
                 </svg>
               </span>
+              <span>
               I accept the terms and conditions of the
-              <a href="/" class="link-pp">Privacy Policy</a></label>
+              <a href="/" class="link-pp">Privacy Policy</a></span></label>
           </div>
           <button type="submit" class="send-button">Send</button>
         </form>
